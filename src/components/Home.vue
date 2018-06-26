@@ -25,20 +25,14 @@
 <script>
 export default {
   name: 'Home',
-  data () {
-    return {
-      imgMeetups: [
-        {imageUrl: 'https://pbs.twimg.com/media/DfqbQKmVAAE4uri.jpg', id: 'code01', title: 'Porque nodejs'},
-        {imageUrl: 'https://pbs.twimg.com/media/Dfr_Is5X4AAw_pd.jpg', id: 'code02', title: 'Imagen de Carrusell'},
-        {imageUrl: 'https://pbs.twimg.com/media/DfsaLkkWkAEDAWF.jpg', id: 'code03', title: 'Imagen de Carrusell'},
-        {imageUrl: 'https://pbs.twimg.com/media/DXzFTx0XcAArf-x.jpg', id: 'code04', title: 'Imagen de Carrusell'},
-        {imageUrl: 'https://pbs.twimg.com/media/DVi54vmWAAAF_WH.jpg', id: 'code05', title: 'Imagen de Carrusell'},
-        {imageUrl: 'https://pbs.twimg.com/media/C_lHAjGXgAIrL-f.jpg', id: 'code06', title: 'Imagen de Carrusell'}
-      ]
-
+  computed: {
+    imgMeetups () {
+      return this.$store.getters.featuredMeetups
     }
-  }
+  },
+  methods: {
 
+  }
 }
 </script>
 

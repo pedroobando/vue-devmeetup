@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import Vuetify from 'vuetify'
+import {store} from './store'
 import 'vuetify/dist/vuetify.min.css'
 
 import colors from 'vuetify/es5/util/colors'
@@ -21,6 +22,7 @@ Vue.config.productionTip = false
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  store,
   router,
   render: h => h(App)
 })
