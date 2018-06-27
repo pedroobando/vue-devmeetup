@@ -12,11 +12,13 @@
                 </v-card-media>
               </v-flex>
               <v-flex xs7 sm8 md9>
-                <v-card-title primary-title>
-                  <div class="headline">{{ meetup.title }}</div>
+                <v-card-title>
+                  <h2 class="headline">{{ meetup.title }}</h2><br>
+                </v-card-title>
+                <v-card-title>
                   <div>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum doloribus, delectus minima veritatis perspiciatis suscipit obcaecati consequuntur aspernatur quos, inventore ut deleniti repellat a quae reiciendis quo vero est sunt!</p>
-                    <p class="text-xs-right">Fecha: {{ meetup.date }}</p>
+                    <span>{{ meetup.description }}</span><br>
+                    <span>Fecha: {{ meetup.date }}</span>
                   </div>
                 </v-card-title>
                 <v-card-actions>
@@ -33,7 +35,6 @@
       </v-flex>
     </v-layout>
   </v-container>
-
 </template>
 
 <script>
